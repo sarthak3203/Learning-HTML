@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 5 project</title>
+</head>
+<body>
+    <ol type="I">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four
+            <ol type="1"><li>4.1</li>
+                <li>4.2</li>
+                <li>4.3</li>
+            </ol>
+        </li>
+    </ol>
+    <ul>Fruits
+        <li>orange</li>
+        <li>guava</li>
+        <li>litchi</li>
+        <li>grapes</li>
+    </ul>
+    <table border="1">
+        <caption>name and roll no</caption>
+        <tr></tr>
+        <th>name</th>
+        <th>roll no</th>
+    </tr>
+    <tr>
+        <td>sarthak</td>
+        <td>06</td>
+    </tr>
+    <tr>
+        <td>sirest</td>
+        <td>07</td>
+    </tr>
+    <tr>
+        <td colspan="2">This is empty</td>
+    </tr>
+    </table>
+    <hr>
+
+    <h1>To contact me, Fill this form</h1>
+    <form action="/submit.php">
+        <table>
+            <tr>
+        <td><label for="username">Username: </label></td>
+        <td><input type="text" placeholder="Enter Username" id="username" name="username"></td>
+    </tr>
+    <tr> 
+       <td> Enter DOB: </td>
+       <td><input type="date"></td>
+     </tr>
+     <tr>
+        <td>Submit your aadhar: </td>
+        <td><input type="file"></td>
+     </tr>
+     </table>
+        Choose your Fav Color: <input type="color"> <br>
+        Select your range: <input type="range"> <br>
+        Click on this button: <br>
+        <input type="button" placeholder="click here" value="click here"> <br>
+        <table>
+            <tr> <td>Choose your Gender: </td>
+        
+            <td><label for="male">Male</label></td>
+        <td><input type="radio" id="male" name="gender" value="male"></td>
+        <td><label for="female">Female</label></td>
+        <td><input type="radio" id="female" name="gender" value="female"></td>
+        <td><label for="other">Other</label></td>
+        <td><input type="radio" id="other" name="gender" value="other"></td></tr></table> <br>
+        Select your fav sports: <br>
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" id="cricket" value="cricket" name="sports">
+        <label for="Football">Football</label>
+        <input type="checkbox" id="Football" value="Football" name="sports">
+        <label for="hockey">Hockey</label>
+        <input type="checkbox" id="hockey" value="hockey" name="sports"> <br>
+        <label for="State"> State</label>
+        <select name="State" id="State">
+            <option value="Haryana">Haryana</option>
+            <option value="Punjab">Punjab</option>
+            <option value="up">UP</option>
+        </select> <br>
+    
+        Write something about yourself: 
+        <textarea name="description" ></textarea> <hr>
+        <input type="submit" placeholder="Submit" value="submit"> <hr>
+I learned HTML from here: <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rklidcZ-aLU?si=8kdRmfuDAq_Fz-MO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input tag</title>
+</head>
+<body>
+    <h1>we are creating a sign in page here</h1>
+    <form action="/submit.php">
+        <label for="username">Username: </label>
+        <input type="text" placeholder="Enter Username" id="username" name="username">
+        <br>
+        <label for="password">Enter Password: </label>
+        <input type="password" id="password" name="password">
+        <br>
+        Enter DOB: <input type="date"> <br>
+        Submit your aadhar: <input type="file"> <br>
+        Choose your Fav Color: <input type="color"> <br>
+        Select your range: <input type="range"> <br>
+        Click on this button: <br>
+        <input type="button" placeholder="click here" value="click here"> <br>
+        Choose your gender: <br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other"> <br>
+        Select your fav sports: <br>
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" id="cricket" value="cricket" name="sports">
+        <label for="Football">Football</label>
+        <input type="checkbox" id="Football" value="Football" name="sports">
+        <label for="hockey">Hockey</label>
+        <input type="checkbox" id="hockey" value="hockey" name="sports"> <br>
+        <label for="State"> State</label>
+        <select name="State" id="State">
+            <option value="Haryana">Haryana</option>
+            <option value="Punjab">Punjab</option>
+            <option value="up">UP</option>
+        </select> <br>
+        Write something about yourself: 
+        <textarea name="description" ></textarea> <hr>
+        <input type="submit" placeholder="Submit" value="submit">
+
+    </form>
+    
+</body>
+</html>
