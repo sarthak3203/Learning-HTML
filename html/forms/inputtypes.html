@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input tag</title>
+    <title>Forms</title>
 </head>
 <body>
-    <h1>we are creating a sign in page here</h1>
-    <form action="/submit.php">
-        <label for="username">Username: </label>
-        <input type="text" placeholder="Enter Username" id="username" name="username">
-        <br>
-        <label for="password">Enter Password: </label>
-        <input type="password" id="password" name="password">
-        <br>
-        Enter DOB: <input type="date"> <br>
-        Submit your aadhar: <input type="file"> <br>
-        Choose your Fav Color: <input type="color"> <br>
-        Select your range: <input type="range"> <br>
-        Click on this button: <br>
-        <input type="button" placeholder="click here" value="click here"> <br>
-        Choose your gender: <br>
-        <label for="male">Male</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="female">Female</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="other">Other</label>
-        <input type="radio" id="other" name="gender" value="other"> <br>
-        Select your fav sports: <br>
-        <label for="cricket">Cricket</label>
-        <input type="checkbox" id="cricket" value="cricket" name="sports">
-        <label for="Football">Football</label>
-        <input type="checkbox" id="Football" value="Football" name="sports">
-        <label for="hockey">Hockey</label>
-        <input type="checkbox" id="hockey" value="hockey" name="sports"> <br>
-        <label for="State"> State</label>
-        <select name="State" id="State">
-            <option value="Haryana">Haryana</option>
-            <option value="Punjab">Punjab</option>
-            <option value="up">UP</option>
-        </select> <br>
-        Write something about yourself: 
-        <textarea name="description" ></textarea> <hr>
-        <input type="submit" placeholder="Submit" value="submit">
-
+    <form action="">
+        <label for="name">Enter your name : </label>
+        <input type="text" id="name" placeholder="enter text here" value="xyz"> <br>
+        Username: <input type="text" placeholder="enter your username"> <br>
+        Password: <input type="password" placeholder="enter password">
     </form>
+
+    <h2>now we will create a radiobutton</h2>
+    <form action="">
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male"><br>
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
+        <label for="other">other</label>
+        <input type="radio" id="other" name="gender" value="other">
+    </form>
+
+    <h2>now we will create a checkbox</h2>
+    <form action="">
+        which  language do you know: <br>
+        
+        <input type="checkbox" name="lang" id="cpp" value="cpp">
+        <label for="cpp">cpp</label><br>
+        
+        <input type="checkbox" id="java" name="lang" value="java">
+        <label for="java">java</label><br>
+    
+        <input type="checkbox" name="lang" id="python" value="python">
+        <label for="python">python</label><br>
+        <input type="submit">
+    </form>
+
+
+    <!-- VALUE IS NECESSARY :- Radio buttons: Without value, all selected options send just "on" to the server - you can't tell which option was actually chosen.
+     Checkboxes: Same problem - without value, you get multiple "on" values instead of knowing which specific checkboxes were checked (like "cpp", "java", "python").-->
+
+
+     <h2>here will create a dropdown menu</h2>
+
+     <form action="">
+        <label for="language">Select a language</label>
+        <select name="language" id="language">
+            <option value="java">java</option>
+            <option value="cpp">cpp</option>
+            <option value="python"> python</option>
+        </select>
+     </form>
+<label for="fb">enter your feedback</label>
+     <textarea name="feedback" id="fb"></textarea>
     
 </body>
 </html>
